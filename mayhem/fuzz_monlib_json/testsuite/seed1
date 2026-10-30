@@ -1,0 +1,1 @@
+{"ts":1500000000,"metrics":[{"type":"COUNTER","labels":{"a":"b"},"value":3}]}

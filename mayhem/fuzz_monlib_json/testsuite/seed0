@@ -1,0 +1,1 @@
+{"commonLabels":{"host":"h"},"sensors":[{"kind":"GAUGE","labels":{"sensor":"x"},"value":1.5}]}

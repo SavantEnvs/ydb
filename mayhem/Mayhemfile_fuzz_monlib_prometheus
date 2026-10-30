@@ -1,0 +1,9 @@
+project: savantenvs/ydb
+target: fuzz_monlib_prometheus
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_monlib_prometheus/testsuite
+cmds:
+  - cmd: /mayhem/out/bin/fuzz_monlib_prometheus
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,5 @@
+# TYPE rt histogram
+rt_bucket{le="0.5"} 3
+rt_bucket{le="+Inf"} 5
+rt_sum 7
+rt_count 5

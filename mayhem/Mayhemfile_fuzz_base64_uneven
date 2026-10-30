@@ -1,0 +1,9 @@
+project: savantenvs/ydb
+target: fuzz_base64_uneven
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_base64_uneven/testsuite
+cmds:
+  - cmd: /mayhem/out/bin/fuzz_base64_uneven
+    libfuzzer: true
+    timeout: 5
